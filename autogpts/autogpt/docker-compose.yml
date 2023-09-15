@@ -10,6 +10,7 @@ services:
     env_file:
       - .env
     volumes:
+      - ./autogpt_workspace:/app/autogpt_workspace:rw
       - ./:/app
       - ./docker-compose.yml:/app/docker-compose.yml:ro
       - ./Dockerfile:/app/Dockerfile:ro
